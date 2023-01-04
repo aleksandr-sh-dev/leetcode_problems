@@ -1,0 +1,16 @@
+int removeElement(int* nums, int numsSize, int val)
+{
+    int j = 0;
+    
+    if (numsSize == 1 && nums[0] == val) return 0;
+    if (numsSize == 1) return 1;
+
+    for (int i = 0; i < numsSize; i++) {
+        if (nums[i] != val) {
+            nums[j] = nums[i];
+            j++;
+        }
+    }
+
+    return j;
+}
