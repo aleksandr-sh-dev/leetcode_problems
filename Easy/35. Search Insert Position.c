@@ -1,23 +1,20 @@
-struct finder {
-    int index;
-    bool found_position;
-};
-
 int searchInsert(int* nums, int numsSize, int target)
 {
-    struct finder finder;
-    finder.found_position = true;
-    finder.index = numsSize;
+    int low = 0, high = numsSize - 1, mid;
 
-    for (int i = 0; i < numsSize; i++) {
-        if (nums[i] == target) {
-            return i;
+    while (low <= high) {
+        mid = (high + low) / 2;
+        if (nums[mid] == target) {
+            return mid;
         }
-        if (finder.found_position && nums[i] > target) {
-            finder.index = i;
-            finder.found_position = false;
+        else if (nums[mid] < target) {
+            low = mid + 1;
         }
+        else {
+            high = mid - 1;
+        }
+
     }
     
-    return finder.index;
+    return low;
 }
