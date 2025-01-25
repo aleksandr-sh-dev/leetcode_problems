@@ -1,0 +1,10 @@
+{
+    "tasks": [
+        {
+            "label": "Start Longest Palindromic Substring [MEDIUM]",
+            "type": "shell",
+            "command": "cd ${workspaceFolder}/medium && python3 longest_palindromic_substring.py cbbd && python3 longest_palindromic_substring.py babad",
+            "args": [],
+        }
+    ]
+}
