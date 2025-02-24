@@ -9,15 +9,18 @@ class TreeNode:
 
     def insert(self, val):
         if self.val:
-            if val < self.val:
-                if self.left is None:
-                    self.left = TreeNode(val)
-                else:
+            if self.left is None:
+                print(f'Left tree: {val}')
+                self.left = TreeNode(val)
+            elif self.right is None:
+                print(f'Right tree: {val}')
+                self.right = TreeNode(val)
+            else:
+                if self.left.left is None or self.left.right is None:
+                    print(f'Next left tree')
                     self.left.insert(val)
-            elif val > self.val:
-                if self.right is None:
-                    self.right = TreeNode(val)
                 else:
+                    print('Next right tree')
                     self.right.insert(val)
         else:
             self.val = val
@@ -29,6 +32,14 @@ class TreeNode:
         if self.right:
             self.right.PrintTree()
 
+    def display_tree(self, tree, level=0, prefix="Root: "):
+        """(Made with DeepSeek) Recursively display the binary tree."""
+        if tree is not None:
+            print(" " * (level * 4) + prefix + str(tree.val))
+            if tree.left is not None or tree.right is not None:
+                self.display_tree(tree.left, level + 1, "L--- ")
+                self.display_tree(tree.right, level + 1, "R--- ")
+
 
 # class Solution:
     # def isBalanced(self, root: Optional[TreeNode]) -> bool:
@@ -36,6 +47,7 @@ class TreeNode:
 
 def main():
     root = TreeNode(3)
+    print(f'Init TreeNode root with value: {root.val}')
     root.insert(9)
     root.insert(20)
     root.insert(None)
@@ -43,6 +55,7 @@ def main():
     root.insert(15)
     root.insert(7)
     root.PrintTree()
+    root.display_tree(root)
     # res = isBalanced(root)
 
     # if(res):
