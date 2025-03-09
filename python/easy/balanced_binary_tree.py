@@ -23,6 +23,8 @@ class TreeNode:
         self.left = None
         self.right = None
 
+    # This insert function is deprecetad because LeetCode feels TreeNode in different way. 
+    # Use insert from binary_tree_preorder_traversal.py
     def insert(self, values):
         """(Made with DeepSeek) Constructs a binary tree from a list of values, skipping None."""
         if not values:
@@ -86,7 +88,7 @@ def is_balanced_tree(root) -> bool:
 def main():
     parser = argparse.ArgumentParser(prog='Balanced Binary Tree problem: https://leetcode.com/problems/balanced-binary-tree')
     parser.add_argument('--tree', type=str, required=True,
-                        help='Input string to find is Binary Tree balanced or not (e.g. [3, 9, 20, None, None, 15, 7])')
+                        help='Input string to find is Binary Tree balanced or not (e.g. [3,9,20,None,None,15,7])')
 
     args = parser.parse_args()
     binary_tree = parse_binary_tree(args.tree)
