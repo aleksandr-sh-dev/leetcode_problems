@@ -62,24 +62,43 @@ class TreeNode:
         
         return 1 + max(self.height_tree(tree.left), self.height_tree(tree.right))
 
-class Solution:
-    def postorderTraversal(self, root) -> list:
-        def traversal(root, int_list):
-            if root is not None:
-                traversal(root.left, int_list)
-                traversal(root.right, int_list)
-                int_list.append(root.val)
-                    
-        int_list = []
-        traversal(root, int_list)
+def get_minimum(list) -> int:
+    if list:
+        return min(list)
+    else:
+        return float('inf')
 
-        return int_list
+min_depth_list_glob = []
+class Solution:
+    # O(n) complexity    
+    def minDepth_linear_complexity(self, root) -> int:
+        def traversal(root, depth_list, depth):
+            if root is not None:
+                depth += 1
+                minimum = get_minimum(min_depth_list_glob)
+                if depth >= minimum:
+                    return
+                if root.left is None and root.right is None:
+                    print(f'Enter height: {depth}')
+                    depth_list.append(depth)
+                traversal(root.left, depth_list, depth)
+                traversal(root.right, depth_list, depth)
+
+        if root is None:   
+            return 0
+        
+        depth = 0
+        traversal(root, min_depth_list_glob, depth)
+
+        minimum = get_minimum(min_depth_list_glob)
+        min_depth_list_glob.clear()
+        return minimum
 
 
 def main():
-    parser = argparse.ArgumentParser(prog='Binary Tree Postorder Traversal: https://leetcode.com/problems/binary-tree-postorder-traversal')
+    parser = argparse.ArgumentParser(prog='Minimum Depth of Binary Tree: https://leetcode.com/problems/minimum-depth-of-binary-tree')
     parser.add_argument('--tree', type=str, required=True,
-                        help='Input string to Postorder Traversal Binary Tree (e.g. [3,9,20,None,None,15,7])')
+                        help='Input string to get minimal depth of Binary Tree (e.g. [3,9,20,None,None,15,7])')
 
     args = parser.parse_args()
     binary_tree = parse_binary_tree(args.tree)
@@ -93,8 +112,9 @@ def main():
 
     # Perform preorder traversal
     solution = Solution()
-    output_list = solution.postorderTraversal(root)
-    print(f'Output: {output_list}')
+    min_height_lin = solution.minDepth_linear_complexity(root)
+    # min_height = solution.minDepth(root)
+    print(f'Minimal height of binary tree: \nlinear: {min_height_lin}\n(write better): ')
 
 
 if __name__ == "__main__":
