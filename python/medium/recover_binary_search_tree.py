@@ -91,7 +91,44 @@ class Solution:
         bad_nodes[0].val, bad_nodes[-1].val = bad_nodes[-1].val, bad_nodes[0].val
 
     def recoverTree(self, root):
-        print('TODO')
+        def morrisTraversal_inorder(root):
+            new_tree = []
+            current = root
+
+            while current is not None:
+                if current.left is None:
+                    print(f'Current left is None, append: {current.val}, new current: {current.right.val}')
+                    new_tree.append(current)
+                    current = current.right
+                else:
+                    print(f'Current left is not None, new previous: {current.left.val}')
+                    previous = current.left
+                    while previous.right is not None and previous.right != current:
+                        print(f'Previous right is not None, new previous: {previous.right.val}')
+                        previous = previous.right
+
+                    if previous.right is None:
+                        print(f'Previous.right is None, new previous.right: {current.val}, new current: {current.left.val}')
+                        previous.right = current
+                        current = current.left
+                    else:
+                        previous.right = None
+                        print(f'Current right is not None, append: {current.val}')
+                        new_tree.append(current)
+                        current = current.right
+            
+            return new_tree
+
+        new_tree = morrisTraversal_inorder(root)
+        bad_nodes = []
+
+        for i in range(1, len(new_tree)):
+            if new_tree[i - 1].val > new_tree[i].val:
+                bad_nodes.append(new_tree[i - 1])
+                bad_nodes.append(new_tree[i])
+
+        bad_nodes[0].val, bad_nodes[-1].val = bad_nodes[-1].val, bad_nodes[0].val
+
 
 def main():
     parser = argparse.ArgumentParser(prog=f'{TASK_NAME}: {TASK_LINK}')
@@ -113,8 +150,8 @@ def main():
     if args.complexity == 'linear':
         solution.recoverTree_linear_complexity(root)
 
-    # if args.complexity == 'constant':
-        # solution.recoverTree(root)
+    if args.complexity == 'constant':
+        solution.recoverTree(root)
 
     print('Tree after fix: ')
     root.display_tree(root)
