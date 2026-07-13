@@ -3,7 +3,7 @@
 #include "../../libs/uthash/src/uthash.h"
  
 #define SOLUTION_HASH_TABLE (1) // O(n) memory and time
-#define SOLUTION_FLOYDS (2) // O(1) memory and O(n) time
+#define SOLUTION_FLOYDS     (2) // O(1) memory and O(n) time
 
 #define SOLUTION SOLUTION_FLOYDS
 
@@ -13,7 +13,25 @@ struct ListNode {
 };
 
 #if SOLUTION == SOLUTION_FLOYDS
+bool hasCycle(struct ListNode *head) {
+    if (head == NULL) {
+        return false;
+    }
 
+    struct ListNode *slow = head;
+    struct ListNode *fast = head;
+
+    while(fast != NULL && fast->next != NULL) {
+        fast = fast->next->next;
+        slow = slow->next;
+
+        if(slow == fast) {
+            return true;
+        }
+    }
+
+    return false;
+}
 #endif // SOLUTION_FLOYDS
 
 #if SOLUTION == SOLUTION_HASH_TABLE
