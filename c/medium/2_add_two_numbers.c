@@ -1,120 +1,77 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
-void reverseList(struct ListNode** head)
-{
-    struct ListNode* prev = NULL;
-    struct ListNode* current = *head;
-    struct ListNode* next = NULL;
+#include <stddef.h>
+#include <stdbool.h>
 
-    while (current != NULL) {
-        next = current->next;
-        current->next = prev;
-        prev = current;
-        current = next;
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
+
+void addNumToList(struct ListNode **head, struct ListNode **tail, int value) {
+    struct ListNode *new = (struct ListNode*)malloc(sizeof(struct ListNode));
+
+    new->val = value;
+    new->next = NULL;
+
+    if (*head == NULL) {
+        *head = new;
+        *tail = new;
+    } else {
+        (*tail)->next = new;
+        *tail = new;
     }
-
-    *head = prev;
 }
 
-void push(struct ListNode** head, int data)
-{
-    struct ListNode* newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
+struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
+    struct ListNode *result = NULL;
+    struct ListNode *tail = NULL;
 
-    newNode->val = data;
-    newNode->next = (*head);
-    (*head) = newNode;
-}
+    int saved_value = 0;
+    int l1_val = 0;
+    int l2_val = 0;
+    int new_val = 0;
 
-struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
-{
-    if (l1 == NULL && l2 == NULL) {
-        return NULL;
-    }
+    bool l1_ended = false;
+    bool l2_ended = false;
 
-    struct ListNode summary;
-    struct ListNode *head = &summary;
-    head->next = NULL;
+    while (!l1_ended || !l2_ended) {
+        if (!l1_ended) {
+            l1_val = l1->val;
+        }
 
-    int k = 0, j = 0, rest = 0;
-    int max;
+        if (!l2_ended) {
+            l2_val = l2->val;
+        }
 
-    int *list1 = (int*)malloc(sizeof(int) * 100);
-    int *list2 = (int*)malloc(sizeof(int) * 100);
+        new_val = l1_val + l2_val + saved_value;
 
-    if (l1->val == 0 && l2->val == 0) {
-        if (l1->next == NULL && l2->next == NULL) {
-            return l1;
+        if (new_val / 10 != 0) {
+            saved_value = 1;
+            new_val = new_val % 10;
+        } else {
+            saved_value = 0;
+        }
+
+        addNumToList(&result, &tail, new_val);
+
+        l1_val = 0;
+        l2_val = 0;
+        
+        if (l1->next != NULL) {
+            l1 = l1->next;
+        } else {
+            l1_ended = true;
+        }
+
+        if (l2->next != NULL) {
+            l2 = l2->next;
+        } else {
+            l2_ended = true;
         }
     }
 
-    while (l1 != NULL) {
-        list1[k] = l1->val;
-        l1 = l1->next;
-        k++;
+    if (saved_value != 0) {
+        addNumToList(&result, &tail, saved_value);
     }
 
-    while (l2 != NULL) {
-        list2[j] = l2->val;
-        l2 = l2->next;
-        j++;
-    }
-
-    if (k > j) {
-        max = k;
-    }
-    else {
-        max = j;
-    }
-
-    for (int i = 0; i < max; i++) {
-        if (list1[i] >= 0 && list2[i] >= 0) {
-            int val = list1[i] + list2[i] + rest;
-            if (val >= 10) {
-                rest = val / 10;
-                push(&head, (val % 10));
-            }
-            else {
-                push(&head, (list1[i] + list2[i] + rest));
-                rest = 0;
-            }
-        }
-        else if (list1[i] < 0 && list2[i] >= 0) {
-            int val = list2[i] + rest;
-            if (val >= 10) {
-                rest = val / 10;
-                push(&head, (val % 10));
-            }
-            else {
-                push(&head, val);
-                rest = 0;
-            }
-        }
-        else if (list1[i] >= 0 && list2[i] < 0) {
-            int val = list1[i] + rest;
-            if (val >= 10) {
-                rest = val / 10;
-                push(&head, (val % 10));
-            }
-            else {
-                push(&head, val);
-                rest = 0;
-            }
-        }
-        else {
-            continue;
-        }
-    }
-
-    if (rest != 0) {
-        push(&head, rest);
-    }
-
-    reverseList(&head);
-
-    return summary.next;
+    return result;
 }
