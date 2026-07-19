@@ -1,10 +1,37 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
+#include <stddef.h>
+
+#define SOLUTION_RECURSION    (1)
+#define SOLUTION_TWO_POINTERS (2)
+
+#define SOLUTION SOLUTION_RECURSION
+
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
+
+#if SOLUTION == SOLUTION_RECURSION
+struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
+    if (list2 == NULL) {
+        return list1;
+    }
+    if (list1 == NULL) {
+        return list2;
+    }
+
+    if (list1->val <= list2->val) {
+        struct ListNode *rest = mergeTwoLists(list1->next, list2);
+        list1->next = rest;
+        return list1;
+    } else {
+        struct ListNode *rest = mergeTwoLists(list1, list2->next);
+        list2->next = rest;
+        return list2;
+    }
+}
+#endif // SOLUTION_RECURSION
+
+#if SOLUTION == SOLUTION_TWO_POINTERS
 struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2)
 {
     struct ListNode merged;
@@ -36,4 +63,4 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2)
 
     return merged.next;
 }
-
+#endif // SOLUTION_TWO_POINTERS
