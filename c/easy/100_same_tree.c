@@ -1,11 +1,11 @@
+#include <stdbool.h>
+#include <stddef.h>
+
 struct TreeNode {
     int val;
     struct TreeNode *left;
     struct TreeNode *right;
 };
-
-#include <stdbool.h>
-#include <stddef.h>
 
 bool isSameTree(struct TreeNode* p, struct TreeNode* q) {
     if (p == NULL && q == NULL) {
