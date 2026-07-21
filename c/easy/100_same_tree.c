@@ -1,14 +1,16 @@
-bool isSameTree(struct TreeNode *p, struct TreeNode *q)
-{
-    if ((p == NULL) && (q == NULL)) {
+struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
+
+#include <stdbool.h>
+#include <stddef.h>
+
+bool isSameTree(struct TreeNode* p, struct TreeNode* q) {
+    if (p == NULL && q == NULL) {
         return true;
-    }
-
-    if ((p == NULL) && (q != NULL)) {
-        return false;
-    }
-
-    if ((p != NULL) && (q == NULL)) {
+    } else if (p == NULL || q == NULL) {
         return false;
     }
 
@@ -16,17 +18,13 @@ bool isSameTree(struct TreeNode *p, struct TreeNode *q)
         return false;
     }
 
-    if ((p->left != NULL) || (q->left != NULL)) {
-        if (!isSameTree(p->left, q->left)) {
-            return false;
-        }
+    bool same = isSameTree(p->left, q->left);
+
+    if (same == false) {
+        return same;
     }
 
-    if ((p->right != NULL) || (q->right != NULL)) {
-        if (!isSameTree(p->right, q->right)) {
-            return false;
-        }
-    }
+    same = isSameTree(p->right, q->right);
 
-    return true;
+    return same;
 }
