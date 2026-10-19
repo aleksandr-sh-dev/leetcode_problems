@@ -1,6 +1,12 @@
 #include <stdbool.h>
 #include "../../libs/uthash/src/uthash.h"
 
+#define SOLUTION_HASH_MAP 0
+#define SOLUTION_SORTING 1
+
+#define SOLUTION SOLUTION_SORTING
+
+#if (SOLUTION == SOLUTION_HASH_MAP)
 bool containsDuplicate(int* nums, int numsSize) {
     struct hashTable {
         int key;
@@ -28,3 +34,43 @@ bool containsDuplicate(int* nums, int numsSize) {
 
     return contains_duplicate;
 }
+#elif (SOLUTION == SOLUTION_SORTING)
+int comp(const void *a, const void *b) {
+    int x = *(int *)a;
+    int y = *(int *)b;
+
+    if (x > y) {
+        return 1;
+    }
+
+    if (x < y) {
+        return -1;
+    }
+
+    return 0;
+}
+
+bool containsDuplicate(int* nums, int numsSize) {
+    if (numsSize == 1) {
+        return false;
+    }
+
+    if (numsSize == 2) {
+        if (nums[0] == nums[1]) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    qsort(nums, numsSize, sizeof(int), comp);
+
+    for (int i = 0; i < (numsSize - 1); i++) {
+        if (nums[i] == nums[i + 1]) {
+            return true;
+        }
+    }
+
+    return false;
+}
+#endif // SOLUTION
