@@ -6,10 +6,10 @@ This repository contains implementations, algorithms and data structures practic
 
 | Difficulty | Unique Problems Solved | Total Solution Files |
 | :--- | :---: | :---: |
-| 🟢 Easy | 51 | 55 |
-| 🟡 Medium | 51 | 53 |
+| 🟢 Easy | 54 | 58 |
+| 🟡 Medium | 56 | 58 |
 | 🔴 Hard | 1 | 1 |
-| **Total** | **103** | **109** |
+| **Total** | **111** | **117** |
 
 ---
 
