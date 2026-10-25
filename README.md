@@ -7,9 +7,9 @@ This repository contains implementations, algorithms and data structures practic
 | Difficulty | Unique Problems Solved | Total Solution Files |
 | :--- | :---: | :---: |
 | 🟢 Easy | 51 | 55 |
-| 🟡 Medium | 50 | 52 |
+| 🟡 Medium | 51 | 53 |
 | 🔴 Hard | 1 | 1 |
-| **Total** | **102** | **108** |
+| **Total** | **103** | **109** |
 
 ---
 
@@ -115,6 +115,7 @@ This repository contains implementations, algorithms and data structures practic
 | 695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | 🟡 Medium | [C](./c/medium/695_max_area_of_island.c) |
 | 703 | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | 🟢 Easy | [C++](./cpp/easy/703_kth_largest_element_in_a_stream.cpp) |
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | 🟢 Easy | [C](./c/easy/704_binary_search.c) |
+| 735 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | 🟡 Medium | [C](./c/medium/735_asteroid_collision.c) |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | 🟡 Medium | [C](./c/medium/739_daily_temperatures.c) |
 | 746 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | 🟢 Easy | [C](./c/easy/746_min_cost_climbing_stairs.c) |
 | 763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | 🟡 Medium | [C](./c/medium/763_partition_labels.c) |
