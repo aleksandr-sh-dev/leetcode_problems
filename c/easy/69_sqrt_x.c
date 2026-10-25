@@ -1,22 +1,32 @@
-int mySqrt(int x)
-{
-    long long int begin, answer = 0;
-    long long int end = x;
-    long long int mid;
+int mySqrt(int x) {
+    if (x == 0) {
+        return 0;
+    }
 
-    while (begin <= end) {
-        mid = begin + (end - begin) / 2;
+    if (x > 0 && x < 4) {
+        return 1;
+    }
+
+    int left = 1;
+    int right = x;
+    int middle = 0;
+    int answer = 0;
+
+    while (left <= right) {
+        middle = left + (right - left) / 2;
         
-        if (mid * mid == x) {
-            return mid;
+        int num = x / middle;
+
+        if (num == x / num) {
+            answer = middle;
+            break;
         }
-        else if (mid * mid < x) {
-            answer = mid;
-            printf("\nAnswer in cycle: %d", answer);
-            begin = mid + 1;
-        }
-        else {
-            end = mid - 1;
+
+        if (middle > num) {
+            right = middle - 1;
+        } else {
+            answer = middle;
+            left = middle + 1;
         }
     }
 
