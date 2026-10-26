@@ -7,9 +7,9 @@ This repository contains implementations, algorithms and data structures practic
 | Difficulty | Unique Problems Solved | Total Solution Files |
 | :--- | :---: | :---: |
 | 🟢 Easy | 54 | 58 |
-| 🟡 Medium | 57 | 59 |
+| 🟡 Medium | 58 | 60 |
 | 🔴 Hard | 1 | 1 |
-| **Total** | **112** | **118** |
+| **Total** | **113** | **119** |
 
 ---
 
@@ -42,6 +42,7 @@ This repository contains implementations, algorithms and data structures practic
 | 38 | [Count and Say](https://leetcode.com/problems/count-and-say/) | 🟡 Medium | [Python](./python/medium/38_count_and_say.py) |
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | 🟡 Medium | [C](./c/medium/39_combination_sum.c) |
 | 46 | [Permutations](https://leetcode.com/problems/permutations/) | 🟡 Medium | [C](./c/medium/46_permutations.c) |
+| 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | 🟡 Medium | [C](./c/medium/48_rotate_image.c) |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | [C](./c/medium/49_group_anagrams.c) |
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | 🟡 Medium | [C](./c/medium/56_merge_intervals.c) |
 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | 🟢 Easy | [C](./c/easy/58_length_of_last_word.c) |
