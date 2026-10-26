@@ -7,9 +7,9 @@ This repository contains implementations, algorithms and data structures practic
 | Difficulty | Unique Problems Solved | Total Solution Files |
 | :--- | :---: | :---: |
 | 🟢 Easy | 54 | 58 |
-| 🟡 Medium | 56 | 58 |
+| 🟡 Medium | 57 | 59 |
 | 🔴 Hard | 1 | 1 |
-| **Total** | **111** | **117** |
+| **Total** | **112** | **118** |
 
 ---
 
@@ -122,6 +122,7 @@ This repository contains implementations, algorithms and data structures practic
 | 853 | [Car Fleet](https://leetcode.com/problems/car-fleet/) | 🟡 Medium | [C](./c/medium/853_car_fleet.c) |
 | 875 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | 🟡 Medium | [C](./c/medium/875_koko_eating_bananas.c) |
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟢 Easy | [C](./c/easy/876_middle_of_the_linked_list.c) |
+| 901 | [Online Stock Span](https://leetcode.com/problems/online-stock-span/) | 🟡 Medium | [C](./c/medium/901_online_stock_span.c) |
 | 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array/) | 🟡 Medium | [C](./c/medium/912_sort_an_array.c) |
 | 981 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | 🟡 Medium | [C](./c/medium/981_time_based_key_value_store.c) |
 | 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | 🟡 Medium | [C](./c/medium/1448_count_good_nodes_in_binary_tree.c) |
