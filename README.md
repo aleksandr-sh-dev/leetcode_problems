@@ -6,10 +6,10 @@ This repository contains implementations, algorithms and data structures practic
 
 | Difficulty | Unique Problems Solved | Total Solution Files |
 | :--- | :---: | :---: |
-| 🟢 Easy | 54 | 58 |
+| 🟢 Easy | 55 | 59 |
 | 🟡 Medium | 58 | 60 |
 | 🔴 Hard | 1 | 1 |
-| **Total** | **113** | **119** |
+| **Total** | **114** | **120** |
 
 ---
 
@@ -121,6 +121,7 @@ This repository contains implementations, algorithms and data structures practic
 | 746 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | 🟢 Easy | [C](./c/easy/746_min_cost_climbing_stairs.c) |
 | 763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | 🟡 Medium | [C](./c/medium/763_partition_labels.c) |
 | 853 | [Car Fleet](https://leetcode.com/problems/car-fleet/) | 🟡 Medium | [C](./c/medium/853_car_fleet.c) |
+| 867 | [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/) | 🟢 Easy | [C](./c/easy/867_transpose_matrix.c) |
 | 875 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | 🟡 Medium | [C](./c/medium/875_koko_eating_bananas.c) |
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | 🟢 Easy | [C](./c/easy/876_middle_of_the_linked_list.c) |
 | 901 | [Online Stock Span](https://leetcode.com/problems/online-stock-span/) | 🟡 Medium | [C](./c/medium/901_online_stock_span.c) |
