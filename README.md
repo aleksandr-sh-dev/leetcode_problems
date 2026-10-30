@@ -6,10 +6,10 @@ This repository contains implementations, algorithms and data structures practic
 
 | Difficulty | Unique Problems Solved | Total Solution Files |
 | :--- | :---: | :---: |
-| 🟢 Easy | 55 | 60 |
+| 🟢 Easy | 55 | 61 |
 | 🟡 Medium | 58 | 60 |
 | 🔴 Hard | 1 | 1 |
-| **Total** | **114** | **121** |
+| **Total** | **114** | **122** |
 
 ---
 
@@ -84,7 +84,7 @@ This repository contains implementations, algorithms and data structures practic
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | 🟡 Medium | [C](./c/medium/155_min_stack.c) |
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 🟢 Easy | [C](./c/easy/160_intersection_of_two_linked_lists.c) |
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | 🟡 Medium | [C](./c/medium/167_two_sum_ii_input_array_is_sorted.c) |
-| 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | 🟢 Easy | [Python](./python/easy/169_majority_element.py) |
+| 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | 🟢 Easy | [C++](./cpp/easy/169_majority_element.cpp), [Python](./python/easy/169_majority_element.py) |
 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | 🟢 Easy | [C](./c/easy/190_reverse_bits.c) |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | 🟡 Medium | [C](./c/medium/198_house_robber.c) |
 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | 🟡 Medium | [C](./c/medium/199_binary_tree_right_side_view.c) |
