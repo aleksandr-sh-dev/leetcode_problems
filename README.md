@@ -6,10 +6,10 @@ This repository contains implementations, algorithms and data structures practic
 
 | Difficulty | Unique Problems Solved | Total Solution Files |
 | :--- | :---: | :---: |
-| 🟢 Easy | 55 | 59 |
+| 🟢 Easy | 55 | 60 |
 | 🟡 Medium | 58 | 60 |
 | 🔴 Hard | 1 | 1 |
-| **Total** | **114** | **120** |
+| **Total** | **114** | **121** |
 
 ---
 
@@ -34,7 +34,7 @@ This repository contains implementations, algorithms and data structures practic
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 🟢 Easy | [C](./c/easy/21_merge_two_sorted_lists.c) |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | 🟡 Medium | [C](./c/medium/22_generate_parentheses.c) |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 🟢 Easy | [C](./c/easy/26_remove_duplicates_from_sorted_array.c) |
-| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | 🟢 Easy | [C](./c/easy/27_remove_element.c) |
+| 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | 🟢 Easy | [C](./c/easy/27_remove_element.c), [C++](./cpp/easy/27_remove_element.cpp) |
 | 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | 🟢 Easy | [Python](./python/easy/28_find_the_index_of_the_first_occurrence_in_a_string.py) |
 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | 🟡 Medium | [C](./c/medium/33_search_in_rotated_sorted_array.c) |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | 🟢 Easy | [C](./c/easy/35_search_insert_position.c) |
