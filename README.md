@@ -7,9 +7,9 @@ This repository contains implementations, algorithms and data structures practic
 | Difficulty | Unique Problems Solved | Total Solution Files |
 | :--- | :---: | :---: |
 | 🟢 Easy | 55 | 61 |
-| 🟡 Medium | 58 | 60 |
+| 🟡 Medium | 59 | 61 |
 | 🔴 Hard | 1 | 1 |
-| **Total** | **114** | **122** |
+| **Total** | **115** | **123** |
 
 ---
 
@@ -94,6 +94,7 @@ This repository contains implementations, algorithms and data structures practic
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 🟢 Easy | [C](./c/easy/217_contains_duplicate.c) |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | 🟢 Easy | [C](./c/easy/219_contains_duplicate_ii.c), [C++](./cpp/easy/219_contains_duplicate_ii.cpp) |
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | 🟢 Easy | [C](./c/easy/226_invert_binary_tree.c) |
+| 229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/) | 🟡 Medium | [C++](./cpp/medium/229_majority_element_ii.cpp) |
 | 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | 🟡 Medium | [C](./c/medium/230_kth_smallest_element_in_a_bst.c) |
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | 🟢 Easy | [C](./c/easy/234_palindrome_linked_list.c) |
 | 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | 🟡 Medium | [C](./c/medium/235_lowest_common_ancestor_of_a_binary_search_tree.c) |
