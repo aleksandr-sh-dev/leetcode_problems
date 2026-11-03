@@ -7,9 +7,9 @@ This repository contains implementations, algorithms and data structures practic
 | Difficulty | Unique Problems Solved | Total Solution Files |
 | :--- | :---: | :---: |
 | 🟢 Easy | 55 | 61 |
-| 🟡 Medium | 59 | 61 |
+| 🟡 Medium | 60 | 62 |
 | 🔴 Hard | 1 | 1 |
-| **Total** | **115** | **123** |
+| **Total** | **116** | **124** |
 
 ---
 
@@ -52,6 +52,7 @@ This repository contains implementations, algorithms and data structures practic
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 🟢 Easy | [C](./c/easy/70_climbing_stairs.c) |
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | 🟡 Medium | [C](./c/medium/72_edit_distance.c) |
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | 🟡 Medium | [C](./c/medium/74_search_a_2d_matrix.c) |
+| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | 🟡 Medium | [C++](./cpp/medium/75_sort_colors.cpp) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets/) | 🟡 Medium | [C](./c/medium/78_subsets.c) |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 🟢 Easy | [C](./c/easy/83_remove_duplicates_from_sorted_list.c) |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 🟢 Easy | [C](./c/easy/88_merge_sorted_array.c) |
