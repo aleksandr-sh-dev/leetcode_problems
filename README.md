@@ -6,10 +6,10 @@ This repository contains implementations, algorithms and data structures practic
 
 | Difficulty | Unique Problems Solved | Total Solution Files |
 | :--- | :---: | :---: |
-| 🟢 Easy | 55 | 61 |
+| 🟢 Easy | 56 | 62 |
 | 🟡 Medium | 60 | 62 |
 | 🔴 Hard | 1 | 1 |
-| **Total** | **116** | **124** |
+| **Total** | **117** | **125** |
 
 ---
 
@@ -131,5 +131,6 @@ This repository contains implementations, algorithms and data structures practic
 | 981 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | 🟡 Medium | [C](./c/medium/981_time_based_key_value_store.c) |
 | 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | 🟡 Medium | [C](./c/medium/1448_count_good_nodes_in_binary_tree.c) |
 | 1514 | [Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/) | 🟡 Medium | [C](./c/medium/1514_path_with_maximum_probability.c) |
+| 1768 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 🟢 Easy | [C++](./cpp/easy/1768_merge_strings_alternately.cpp) |
 | 1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | 🟢 Easy | [C](./c/easy/1929_concatenation_of_array.c) |
 | 2023 | [Number of Pairs of Strings With Concatenation Equal to Target](https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/) | 🟡 Medium | [C](./c/medium/2023_number_of_pairs_of_strings_with_concatenation_equal_to_target.c) |
