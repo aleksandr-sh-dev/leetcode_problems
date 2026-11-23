@@ -6,10 +6,10 @@ This repository contains implementations, algorithms and data structures practic
 
 | Difficulty | Unique Problems Solved | Total Solution Files |
 | :--- | :---: | :---: |
-| 🟢 Easy | 56 | 62 |
-| 🟡 Medium | 60 | 62 |
+| 🟢 Easy | 56 | 63 |
+| 🟡 Medium | 61 | 63 |
 | 🔴 Hard | 1 | 1 |
-| **Total** | **117** | **125** |
+| **Total** | **118** | **127** |
 
 ---
 
@@ -33,7 +33,7 @@ This repository contains implementations, algorithms and data structures practic
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | [C](./c/easy/20_valid_parentheses.c) |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 🟢 Easy | [C](./c/easy/21_merge_two_sorted_lists.c) |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | 🟡 Medium | [C](./c/medium/22_generate_parentheses.c) |
-| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 🟢 Easy | [C](./c/easy/26_remove_duplicates_from_sorted_array.c) |
+| 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 🟢 Easy | [C](./c/easy/26_remove_duplicates_from_sorted_array.c), [C++](./cpp/easy/26_remove_duplicates_from_sorted_array.cpp) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element/) | 🟢 Easy | [C](./c/easy/27_remove_element.c), [C++](./cpp/easy/27_remove_element.cpp) |
 | 28 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | 🟢 Easy | [Python](./python/easy/28_find_the_index_of_the_first_occurrence_in_a_string.py) |
 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | 🟡 Medium | [C](./c/medium/33_search_in_rotated_sorted_array.c) |
@@ -86,6 +86,7 @@ This repository contains implementations, algorithms and data structures practic
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 🟢 Easy | [C](./c/easy/160_intersection_of_two_linked_lists.c) |
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | 🟡 Medium | [C](./c/medium/167_two_sum_ii_input_array_is_sorted.c) |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | 🟢 Easy | [C++](./cpp/easy/169_majority_element.cpp), [Python](./python/easy/169_majority_element.py) |
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | 🟡 Medium | [C++](./cpp/medium/189_rotate_array.cpp) |
 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | 🟢 Easy | [C](./c/easy/190_reverse_bits.c) |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | 🟡 Medium | [C](./c/medium/198_house_robber.c) |
 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | 🟡 Medium | [C](./c/medium/199_binary_tree_right_side_view.c) |
